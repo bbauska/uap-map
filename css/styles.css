@@ -1,1 +1,48 @@
+/* styles.css for uap-map */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Hide browser scroll bars */
+}
+ svg {
+   width: 100vw;
+   height: 100vh;
+   background: #fafafa; /* Light gray background - should be visible */
+   cursor: move; /* Indicate panning is possible */
+}
+/* Links (edges) */
+    line.link {
+      stroke: #999; /* Gray links - should be visible */
+      stroke-opacity: 0.6;
+      stroke-width: 1.5px;
+    }
+    /* Link labels */
+    text.link-label {
+      font-family: sans-serif;
+      font-size: 10px;
+      fill: #555; /* Dark gray labels - should be visible */
+      pointer-events: none; /* Don't block mouse on link text */
+    }
+    /* Node circles */
+    circle.node {
+      stroke: #fff;
+      stroke-width: 1.5px;
+      cursor: grab;
+    }
+    /* Node labels */
+    text.node-label {
+      font-family: sans-serif;
+      font-size: 10px;
+      pointer-events: none;
+    }
+    /* Legend styling */
+    legend {
+      font-family: sans-serif;
+      font-size: 12px;
+    }
+    .legend rect {
+      stroke: #333;
+      stroke-width: 1px;
+    }
 
