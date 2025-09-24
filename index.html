@@ -20,54 +20,16 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">  <meta charset="UTF-8" />
+
+  <meta name="author" content="Brian Bauska">
+  <meta name="title" content="UAP Map">
+  <meta name="description" content="Over 600 sample JavaScript programs to choose from and experiment with.">
+  <meta name="keywords" content="W3Cx,W3C,W3Cx-1of5-CSS.0x,CSS,CSS.0x,Cascade Style Sheets,CSS Basics">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name=”robots” content="all">
+  <link rel="canonical" href="https://uap-map.bauska.org">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
   <title>UFO Network + Tooltips & Legend</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden; /* Hide browser scroll bars */
-    }
-    svg {
-      width: 100vw;
-      height: 100vh;
-      background: #fafafa; /* Light gray background - should be visible */
-      cursor: move; /* Indicate panning is possible */
-    }
-    /* Links (edges) */
-    line.link {
-      stroke: #999; /* Gray links - should be visible */
-      stroke-opacity: 0.6;
-      stroke-width: 1.5px;
-    }
-    /* Link labels */
-    text.link-label {
-      font-family: sans-serif;
-      font-size: 10px;
-      fill: #555; /* Dark gray labels - should be visible */
-      pointer-events: none; /* Don't block mouse on link text */
-    }
-    /* Node circles */
-    circle.node {
-      stroke: #fff;
-      stroke-width: 1.5px;
-      cursor: grab;
-    }
-    /* Node labels */
-    text.node-label {
-      font-family: sans-serif;
-      font-size: 10px;
-      pointer-events: none;
-    }
-    /* Legend styling */
-    legend {
-      font-family: sans-serif;
-      font-size: 12px;
-    }
-    .legend rect {
-      stroke: #333;
-      stroke-width: 1px;
-    }
-  </style>
 </head>
 <body>
 
@@ -827,10 +789,6 @@ legendItem.append("text")
   .attr("y", 20)       // shift down within bigger box
   .text(d => d.group);
 </script>
-
-</body>
-</html>
-<!-- partial -->
   
 </body>
 </html>
